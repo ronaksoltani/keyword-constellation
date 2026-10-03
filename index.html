@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-app="keyword-constellation" data-layout="tool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3fa">
+  <meta name="description" content="Group keyword ideas by shared language, review a transparent topic map and export a useful starting point for content planning.">
+  <meta property="og:title" content="Keyword Constellation — KEYWORD RESEARCH · CLUSTERING">
+  <meta property="og:description" content="Group keyword ideas by shared language, review a transparent topic map and export a useful starting point for content planning.">
+  <meta property="og:image" content="preview.svg">
+  <title>Keyword Constellation — KEYWORD RESEARCH · CLUSTERING</title>
+  <link rel="icon" href="preview.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body style="--paper:#f5f3fa;--ink:#272435;--muted:#79758b;--accent:#c5b0ff;--accent2:#83daf2">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>A FREE, LOCAL-FIRST MARKETING WORKBENCH</span><span>SAMPLE CONTENT · NO TRACKING <b>✳</b></span></div>
+  <header class="site-nav"><a class="brand" href="#top" aria-label="Keyword Constellation home"><span class="brand-mark">◈</span>Keyword Constellation<small>TOOLKIT</small></a><nav id="main-navigation" aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#notes">About</a><a class="nav-cta" href="#workspace">Open the tool ↗</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+  <main id="main">
+    <section class="tool-hero" id="top"><div><span class="eyebrow"><i class="eyebrow-dot"></i>KEYWORD RESEARCH · CLUSTERING</span><h1>Find the shape<br>in your search data.</h1><p>Group keyword ideas by shared language, review a transparent topic map and export a useful starting point for content planning.</p><div class="tool-trust"><span class="lock-mark">⌑</span><span>Runs in your browser <b>·</b> No account <b>·</b> Your data stays local</span></div></div><div class="tool-hero-side"><div class="metric-orb"><b>Runs locally</b><span>no keyword list leaves your device</span></div><span class="orb-caption">BUILT FOR CLEARER DECISIONS</span></div></section>
+    <section id="workspace" class="tool-workspace"><div class="tool-grid"><section class="panel"><div class="panel-head"><span class="eyebrow">KEYWORD IDEAS</span><span class="soft-badge">TXT / CSV</span></div><label for="keyword-input">Paste one keyword per line</label><textarea id="keyword-input" rows="13" placeholder="running shoes
+trail running shoes
+best trail running shoes
+shoes for hiking
+lightweight hiking boots
+...">running shoes
+trail running shoes
+best trail running shoes
+shoes for hiking
+lightweight hiking boots
+waterproof hiking shoes
+comfortable walking shoes
+running shoes for beginners
+wide fit trail shoes
+trail shoes for women
+walking shoes for travel
+compare trail running shoes</textarea><div class="field-row"><label for="cluster-size">Cluster by shared words<select id="cluster-size"><option value="1">At least 1 word</option><option value="2" selected>At least 2 words</option><option value="3">At least 3 words</option></select></label><label for="intent-filter">Intent hint<select id="intent-filter"><option value="all">All ideas</option><option value="commercial">Commercial</option><option value="informational">Informational</option></select></label></div><button id="cluster-keywords" class="btn btn--accent">Map the clusters ↗</button><p class="micro-note">A transparent word-overlap heuristic, not a substitute for SERP research or search-volume data.</p></section><section class="panel result-panel"><div class="panel-head"><span class="eyebrow">TOPIC MAP</span><button id="export-keywords" class="text-button">Export CSV ↓</button></div><div id="keyword-results" aria-live="polite"><div class="empty-state"><span class="empty-icon">✳</span><h3>Ideas have a shape.</h3><p>Map the list to reveal closely related phrases.</p></div></div></section></div></section>
+    <section class="notes-section notes-section--tool" id="notes"><div><span class="eyebrow">SCOPE & METHOD</span><h2>A helpful lens, with its limits in view.</h2></div><div class="notes-copy"><p>This small tool makes its inputs and assumptions visible. It runs locally in your browser and never sends the data you enter to an external service.</p><p>Use results as a practical starting point, then check platform documentation, real search results and first-hand research before making business decisions.</p><a href="README.md" class="text-button">Read the project notes ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span>Keyword Constellation</a><p>A small, transparent tool for better marketing work.</p><div class="footer-links"><a href="#top">Back to top ↑</a><a href="README.md">Documentation</a><span>Built by Ronak Soltani · 2026</span></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
